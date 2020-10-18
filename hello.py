@@ -11,6 +11,7 @@ from os.path import isfile, join
 from datetime import datetime
 
 HAL_list = listdir("HAL")
+HAL_list.sort()
 HAL_dict = {}
 for i in range(len(HAL_list)):
     key = HAL_list[i].replace("HAL.tsv.","")
